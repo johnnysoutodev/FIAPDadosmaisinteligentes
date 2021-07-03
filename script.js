@@ -10,12 +10,20 @@ cidadesAvaliadas[1] = htmlSite.substr(lasVegas, 9);
 cidadesAvaliadas[2] = htmlSite.substr(moscou, 6);
 
 let buscarRoteiros = htmlSite.split("#") && htmlSite.split("<br>");
-console.log(buscarRoteiros);
 
-console.log(buscarRoteiros[6].length);
+//Coloque aqui o texto que quer pesquisar
+let teste = htmlSite.search("Museu Histórico do Estado");
+console.log(teste);
+
+//Aqui é o número da array que foi quebrada.
+console.log("Texto da array e depois, quantidade de letas que tem na array");
+console.log(buscarRoteiros[23]);
+console.log(buscarRoteiros[23].length);
 
 let roteiros = [0,1,2];
 roteiros[0] = htmlSite.substr(359, 36);
 
 let cidadesRoteiro = [0,1,2];
-cidadesRoteiro[0] = htmlSite.substr(397, 28);
+cidadesRoteiro[0] = htmlSite.substr(399, 33);
+cidadesRoteiro[1] = htmlSite.substr(979, 55);
+cidadesRoteiro[2] = htmlSite.substr(1504, 70);
